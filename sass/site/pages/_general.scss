@@ -1,0 +1,91 @@
+//General styles
+.home-page,
+.studios-page,
+.about-page,
+.contact-page {
+    background: $color__site-background;
+}
+
+.picture-header {
+    display: none;
+    height: 325px;
+    position: relative;
+    @include dark-background( rgba( 0,0,0,.4 ) );
+    padding: 0 1em;
+    text-align: center;
+
+    @media screen and (min-width: $query__small) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.picture-header-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    position: relative;
+    @include dark-background( rgba( 0,0,0,.4 ) );
+    padding: 0 1em;
+    text-align: center;
+
+    @media screen and (min-width: $query__small) {
+        display: none;
+    }
+}
+
+.header-title {
+    color: $color__site-primary;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+}
+
+.header-tagline {
+    color: #fff;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    margin: .25em 0 1em;
+    word-spacing: .1em;
+}
+
+.title {
+    color: $color__site-primary;
+}
+
+.link {
+    background: $color__site-primary;
+    padding: 8px 25px;
+    color: #fff;
+    font-weight: 700;
+    font-size: .8rem;
+    font-family: $font__sans;
+    border: 2px solid $color__site-primary;
+    border-radius: 0;
+    transition: background .2s linear;
+    text-decoration: none;
+    display: inline-block;
+
+    &:hover,
+    &:focus {
+        background: transparent;
+        color: $color__site-primary;
+    }
+
+    @media screen and (min-width: $query__small) {
+        padding: 10px 36px;
+        font-size: .85rem;
+    }
+}
+
+//gravity form 
+
+.gform_confirmation_wrapper {
+    color: green;
+    font-weight: 700;
+}

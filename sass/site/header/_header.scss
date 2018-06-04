@@ -1,0 +1,19 @@
+body.overflow {
+  overflow-y: hidden;
+}
+
+.site-header {
+  position: relative;
+  padding: 0;
+  font-family: $font__sans;
+
+  @media screen and (min-width: $query__small) {
+    padding: 20px;
+    height: 135px;
+  }
+}
+
+/*
+Header Menu
+ */
+@import "header-menu";

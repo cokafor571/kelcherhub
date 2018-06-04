@@ -1,0 +1,48 @@
+.site-footer {
+  position: relative;
+  padding: 1em;
+  font-size: .9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $color__site-grey;
+  background-color: $color__site-secondary;
+  text-align: center;
+
+  @media screen and (min-width: $query__small) {
+    padding: 2em 0 1em;
+  }
+
+  .widget_custom_html {
+    margin: 1.25em 0;
+
+    span {
+      margin: 0 1em;
+
+      a {
+        color: $color__site-grey;
+        cursor: text;
+        font-weight: 400;
+
+        &:focus,
+        &:hover {
+          border: 0;
+          color: $color__site-grey;
+        }
+      }
+    }
+  }
+
+  .textwidget ul {
+    padding: 0;
+
+    @media screen and (min-width: $query__small) {
+      display: flex;
+      justify-content: space-around;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    a {
+      color: $color__site-grey;
+    }
+  }
+}

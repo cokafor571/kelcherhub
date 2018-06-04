@@ -1,0 +1,194 @@
+//Video
+.video-intro {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto ;
+    padding: 2em 0;
+
+    .player-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            position: absolute;
+            z-index: 2;
+            color: $color__site-primary;
+            cursor: pointer;
+        }
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+        width: 94.1vw;
+        height: calc(94vw * .5625);
+        max-width: 960px;
+        max-height: 540px;
+    }
+}
+
+//About Link
+.about-link-container {
+    text-align: center;
+    border-bottom: 2px solid $color__site-grey;
+    padding-bottom: 2em;
+
+    @media screen and (min-width:$query__small) {
+        padding-bottom: 4em;
+    }
+}
+
+//Mission Statement
+.our-mission {
+    margin: 2em auto 4em;
+
+    @media screen and (min-width: $query__small) {
+        display: flex;
+        align-items: center;
+        max-width: 1080px;
+    }
+
+    .mission-content {
+        padding: 0 1em;
+
+        @media screen and (min-width: $query__small) {
+            padding: 0 2em;
+            flex: .75;
+        }
+
+        .description {
+            line-height: 1.6;
+            word-spacing: 0.1em;
+        }
+    }
+
+    .mission-link {
+        text-align: center;
+        flex: .25;
+    }
+}
+
+//Studios
+.home-studios-container {
+    padding: 4em 0;
+    text-align: center;
+    position: relative;
+    @include dark-background( rgba( 50,61,79,.8 ) );
+
+    h2,
+    p,
+    a {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    .home-studios-description {
+        color: #fff;
+        margin: 2em auto;
+        font-size: .9rem;
+        line-height: 1.6;
+        padding: 0 1em;
+        word-spacing: 0.075em;
+
+        @media screen and (min-width: $query__small) {
+            font-size: 1rem;
+        }
+    }
+}
+
+//Contact
+.home-contact {
+    margin: 0 auto;
+    padding: 4em 0;
+
+    @media screen and (min-width: $query__small) {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+    }
+
+    .home-contact-img {
+        flex: 1;
+        padding: 1em;
+
+        @media screen and (min-width: $query__small) {
+            padding: 0 1em;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    .home-contact-container {
+        flex: 1;
+        padding: 0 1em;
+        text-align: center;
+
+        h3 {
+            margin: 0;
+        }
+
+        p {
+            margin: 1.5em 0;
+        }
+
+        .home-contact-info {
+
+            @media screen and (min-width: 1025px) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .home-contact-info-text {
+
+                h5 {
+                    margin: 0;
+                }
+
+                p {
+                    margin: .5em 0;
+
+                    a {
+                        display: block;
+                        font-size: 1rem;
+                        margin: .25em 0;
+                        text-decoration: none;
+
+                        @media screen and (min-width: $query__small) {
+                            font-size: 1.1rem;
+                        }
+
+                        &:hover,
+                        &:focus {
+                            color: $color__site-primary;
+                            border: 0;
+                        }
+                    }
+                }
+            }
+
+            .or {
+                margin: 1em 2em;
+                font-size: 1rem;
+                font-weight: 700;
+
+                @media screen and (min-width: $query__small) {
+                    font-size: 1.1rem;
+                }
+
+                @media screen and (min-width: 1025px) {
+                    margin: 0 2em;
+                }
+            }
+        }
+    }
+}
