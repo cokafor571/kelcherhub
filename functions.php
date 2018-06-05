@@ -75,8 +75,8 @@ function starterpack_setup() {
 
     // Add theme support for custom logo
     add_theme_support( 'custom-logo', array(
-        'width' => 120,
-        'height' => 135,
+        'width' => 100,
+        'height' => 122,
         'flex-width' => true,
     ));
 

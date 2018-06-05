@@ -955,14 +955,14 @@ body.overflow {
 
 .site-header {
 	position: relative;
-	padding: 0;
+	padding: 10px 0 0;
 	font-family: "Raleway", "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
 }
 
 @media screen and (min-width: 600px) {
 	.site-header {
 		padding: 20px;
-		height: 135px;
+		height: 122px;
 	}
 }
 
@@ -1008,7 +1008,7 @@ Header Menu
 
 .main-navigation a.custom-logo-link img {
 	display: block;
-	width: 90px;
+	width: 75px;
 }
 
 @media screen and (min-width: 600px) {
