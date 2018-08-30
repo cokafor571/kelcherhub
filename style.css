@@ -910,7 +910,7 @@ a:hover, a:active {
 	}
 	.single.has-sidebar .hentry .post-content,
 	.page .hentry .post-content {
-		width: 60%;
+		width: 100%;
 	}
 	.single.has-sidebar .hentry .widget-area,
 	.page .hentry .widget-area {
@@ -2107,6 +2107,55 @@ button.dropdown-toggle {
 .about-page .about-3d-gif img {
 	display: block;
 	margin: 0 auto;
+}
+
+.business-plan-page {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.business-plan-content h2 {
+	text-align: center;
+}
+
+.business-plan-content .business-resource-cards {
+	margin: 2em 0;
+	text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+	.business-plan-content .business-resource-cards {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+}
+
+.business-plan-content .business-resource-cards .business-resource-card {
+	margin: 2em .5em;
+	display: inline-block;
+}
+
+.business-plan-content .business-resource-cards .business-resource-card img {
+	display: block;
+}
+
+.business-plan-content .business-resource-cards .business-resource-card a {
+	display: block;
+	text-decoration: none;
+	padding: 1em 0 1em 1em;
+	text-align: left;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-top: none;
+	box-shadow: 0 9px 18px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.business-plan-content .business-resource-cards .business-resource-card a:hover, .business-plan-content .business-resource-cards .business-resource-card a:focus {
+	color: #de5b49;
 }
 
 @media screen and (min-width: 600px) {

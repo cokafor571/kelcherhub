@@ -298,6 +298,55 @@
     }
 }
 
+// Business Plan Page
+
+.business-plan-page {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.business-plan-content {
+
+    h2 {
+        text-align: center;
+    }
+
+    .business-resource-cards {
+        margin: 2em 0;
+        text-align: center;
+
+        @media screen and (min-width: $query__small) {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .business-resource-card {
+            margin: 2em .5em;
+            display: inline-block;
+
+            img {
+                display: block;
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 1em 0 1em 1em;
+                text-align: left;
+                border: 1px solid rgba(0,0,0, 0.3);
+                border-top: none;
+                box-shadow: 0 9px 18px rgba(0,0,0, 0.3), 0 3px 8px rgba(0,0,0, 0.2);
+
+                &:hover,
+                &:focus {
+                    color: $color__site-primary;
+                }
+            }
+        }
+    }
+}
+
 //Contact Page 
 
 .contact-content-container {
