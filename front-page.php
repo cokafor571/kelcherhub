@@ -19,31 +19,37 @@ get_header(); ?>
 
             <div class="home-page"> <!-- home container -->
 
-                <section class="video-intro"> <!-- video intro -->
+                <section class="home-header"> <!-- home header -->
 
-                    <div id="player"></div>
+                    <?php $image = get_field('home_header_picture'); ?> <!-- desktop home header picture -->
 
-                    <div class="player-overlay">
-                        <?php if( get_field('icon') ): ?>
-                            <i id ="play-button" class="<?php the_field('icon'); ?>"></i>
+                    <div class="home-picture-header" style="background: url(<?php echo $image['url']; ?>) no-repeat center center; background-size:cover">
+
+                        <?php if( get_field('home_header_title') ): ?>
+                            <h1 class="home-header-title"><?php the_field('home_header_title'); ?></h1>
+                        <?php endif;
+
+                        if( get_field('home_header_tagline') ): ?>
+                            <p class="home-header-tagline"><?php the_field('home_header_tagline'); ?></p>
                         <?php endif; ?>
-                    </div>
 
-                </section> <!-- end video intro -->
+                    </div> <!-- end desktop home header picture -->
 
-                <div class="about-link-container">
+                    <?php $imagem = get_field('home_header_picture_mobile'); ?> <!-- mobile home header picture -->
 
-                    <?php $link = get_field('about_link');
+                    <div class="home-picture-header-mobile" style="background: url(<?php echo $imagem['url']; ?>) no-repeat center center; background-size:cover">
 
-                    if( $link ): ?>
-                        
-                        <a class="link" href="<?php echo $link['url']; ?>">
-                            <?php echo $link['title']; ?>
-                        </a>
-                    
-                    <?php endif; ?>
+                        <?php if( get_field('home_header_title') ): ?>
+                            <h1 class="home-header-title"><?php the_field('home_header_title'); ?></h1>
+                        <?php endif;
 
-                </div>
+                        if( get_field('home_header_tagline') ): ?>
+                            <p class="home-header-tagline"><?php the_field('home_header_tagline'); ?></p>
+                        <?php endif; ?>
+
+                    </div> <!-- end mobile home header picture-->
+
+                </section> <!-- end home header -->
 
                 <section class="our-mission"> <!-- home mission -->
 
