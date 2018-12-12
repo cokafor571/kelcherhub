@@ -1322,7 +1322,7 @@ button.dropdown-toggle {
 
 .home-picture-header {
 	display: none;
-	height: 600px;
+	height: 625px;
 	position: relative;
 	padding: 0 2em;
 }
@@ -1375,7 +1375,7 @@ button.dropdown-toggle {
 	background: #fff;
 	padding: .25em;
 	display: inline-block;
-	font-size: 2rem;
+	font-size: 1.75rem;
 	margin: 0;
 	z-index: 1;
 	position: relative;
@@ -1383,7 +1383,7 @@ button.dropdown-toggle {
 
 @media screen and (min-width: 600px) {
 	.home-header-title {
-		font-size: 3rem;
+		font-size: 2.5rem;
 	}
 }
 
@@ -1401,7 +1401,7 @@ button.dropdown-toggle {
 
 @media screen and (min-width: 600px) {
 	.home-header-tagline {
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 	}
 }
 
@@ -2297,6 +2297,68 @@ button.dropdown-toggle {
 
 .contact-info-container svg {
 	color: #de5b49;
+}
+
+.tournament-page-container {
+	padding: 1em;
+	text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+	.tournament-page-container {
+		padding: 1em 2em;
+	}
+}
+
+.tournament-page-container .tournament-form-container {
+	margin: 2em 0 1em;
+}
+
+@media screen and (min-width: 900px) {
+	.tournament-page-container .tournament-form-container {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+}
+
+.tournament-page-container .tournament-form-container .form-2k19-text {
+	-ms-flex-preferred-size: 50%;
+	    flex-basis: 50%;
+}
+
+@media screen and (min-width: 900px) {
+	.tournament-page-container .tournament-form-container .form-2k19-text {
+		margin: 0 2em;
+	}
+}
+
+.tournament-page-container .tournament-form-container .form-2k19-text a {
+	border-bottom: 3px solid #fa8320;
+}
+
+.tournament-page-container .tournament-form-container .form-2k19-text a:hover, .tournament-page-container .tournament-form-container .form-2k19-text a:focus {
+	color: #fa8320;
+}
+
+.tournament-page-container .tournament-form-container .gform_wrapper {
+	-ms-flex-preferred-size: 50%;
+	    flex-basis: 50%;
+	margin: 2em 0 0;
+}
+
+@media screen and (min-width: 900px) {
+	.tournament-page-container .tournament-form-container .gform_wrapper {
+		margin: 0;
+	}
+}
+
+.tournament-page-container .tournament-form-container .gform_wrapper input[type="submit"] {
+	background: #FA8320;
+	color: #fff;
 }
 
 /*--------------------------------------------------------------

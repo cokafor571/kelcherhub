@@ -448,3 +448,54 @@
         color: $color__site-primary;
     }
 }
+
+// 2k19 Tournament Page
+
+.tournament-page-container {
+    padding: 1em;
+    text-align: center;
+
+    @media screen and (min-width: $query__small) {
+        padding: 1em 2em;
+    }
+
+    .tournament-form-container {
+        margin: 2em 0 1em;
+
+        @media screen and (min-width: $query__medium) {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-2k19-text {
+            flex-basis: 50%;
+
+            @media screen and (min-width: $query__medium) {
+                margin: 0 2em;
+            }
+
+            a {
+                border-bottom: 3px solid #fa8320;
+
+                &:hover,
+                &:focus {
+                    color: #fa8320;
+                }
+            }
+        }
+
+        .gform_wrapper {
+            flex-basis: 50%;
+            margin: 2em 0 0;
+
+            @media screen and (min-width: $query__medium) {
+                margin: 0;
+            }
+
+            input[type="submit"] {
+                background: #FA8320;
+                color: #fff;
+            }
+        }
+    }
+}
