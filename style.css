@@ -2338,6 +2338,7 @@ button.dropdown-toggle {
 
 .tournament-page-container .tournament-form-container .form-2k19-text a {
 	border-bottom: 3px solid #fa8320;
+	color: #0000EE;
 }
 
 .tournament-page-container .tournament-form-container .form-2k19-text a:hover, .tournament-page-container .tournament-form-container .form-2k19-text a:focus {
